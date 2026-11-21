@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Process — Ridgeline Studio</title>
+  <meta name="description" content="How Ridgeline Studio builds procedural nature scenes: geometry generators, shader materials, and Cycles lighting, with technical notes.">
+  <meta name="author" content="Ridgeline Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b120f">
+  <link rel="canonical" href="https://ridgeline-studio.github.io/process.html">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <meta property="og:title" content="Process — Ridgeline Studio">
+  <meta property="og:description" content="Scenes generated from reusable Python builders rather than downloaded parts.">
+  <meta property="og:image" content="https://ridgeline-studio.github.io/hero.png">
+  <meta property="og:url" content="https://ridgeline-studio.github.io/process.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="pfp.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ridgeline Studio home">
+      <img src="pfp.png" alt="Ridgeline Studio mark" width="42" height="42">
+      <span class="brand-text"><strong>Ridgeline</strong><span>Studio</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="process.html" aria-current="page">Process</a>
+      <a href="assets.html">Free assets</a>
+      <a href="studies.html">Studies</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page" aria-labelledby="process-title">
+      <div class="page-head">
+        <p class="eyebrow">Method</p>
+        <h1 id="process-title">How a scene is made</h1>
+        <p>Work is generated from reusable Python builders rather than assembled from downloaded parts.</p>
+      </div>
+
+      <ol class="process-list">
+        <li>
+          <span class="step" aria-hidden="true">01</span>
+          <div>
+            <h2>Geometry</h2>
+            <p>Trees, roots, terrain, rocks and ground cover are emitted as meshes from deterministic generators, with real-world metre scale and clean topology.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step" aria-hidden="true">02</span>
+          <div>
+            <h2>Materials</h2>
+            <p>Bark grain follows the tube axis through dedicated UVs. Leaf cards, moss and soil use procedural noise and colour ramps — no image textures.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step" aria-hidden="true">03</span>
+          <div>
+            <h2>Light &amp; render</h2>
+            <p>Cycles handles global illumination and atmosphere. The result keeps a deliberate faceted edge so the constructed geometry stays readable.</p>
+          </div>
+        </li>
+      </ol>
+
+      <figure class="wide-figure">
+        <img src="hero.png" alt="Detail of a procedurally modelled ancient tree with buttress roots and moss" loading="lazy" decoding="async">
+        <figcaption>Detail study — the same generator used in Ancient Forest.</figcaption>
+      </figure>
+
+      <details class="technical">
+        <summary>Technical notes</summary>
+        <p>Blender 4.3.2 · Cycles CPU · 12 threads · no third-party models, image textures or HDRIs. Assets are based at z = 0, metrically scaled and exported as Y-up OBJ/MTL with UVs. Denoising is disabled because the build has no OpenImageDenoise.</p>
+      </details>
+
+      <div class="next-link">
+        <a href="assets.html">Next: the free asset kit →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Ridgeline Studio. Site and artwork licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless stated otherwise.</p>
+    <p><a href="#main">Back to top ↑</a></p>
+  </footer>
+</body>
+</html>
