@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ridgeline Studio — Procedural Nature Art &amp; Free Blender Assets</title>
-  <meta name="description" content="Ridgeline Studio creates photoreal procedural nature environments and free Blender assets. Every mesh, shader and texture is authored in Blender with no downloaded models, image textures or HDRIs.">
+  <meta name="description" content="Ridgeline Studio creates photoreal procedural nature environments and free Blender assets, authored entirely in Blender with no downloaded models, image textures or HDRIs.">
   <meta name="author" content="Ridgeline Studio">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#0b120f">
   <link rel="canonical" href="https://ridgeline-studio.github.io/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <meta property="og:site_name" content="Ridgeline Studio">
-  <meta property="og:title" content="Ridgeline Studio — Procedural Nature Art &amp; Free Blender Assets">
+  <meta property="og:title" content="Ridgeline Studio — Procedural Nature Art">
   <meta property="og:description" content="Photoreal procedural environments and a free CC BY 4.0 Blender nature kit.">
   <meta property="og:image" content="https://ridgeline-studio.github.io/hero.png">
   <meta property="og:url" content="https://ridgeline-studio.github.io/">
@@ -43,16 +43,17 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <a class="brand" href="#main" aria-label="Ridgeline Studio, back to top">
-      <img src="pfp.png" alt="Ridgeline Studio mark" width="48" height="48">
+    <a class="brand" href="index.html" aria-label="Ridgeline Studio home">
+      <img src="pfp.png" alt="Ridgeline Studio mark" width="42" height="42">
       <span class="brand-text"><strong>Ridgeline</strong><span>Studio</span></span>
     </a>
     <nav aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="#assets">Free assets</a>
-      <a href="#about">About</a>
-      <a href="#links">Elsewhere</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="work.html">Work</a>
+      <a href="process.html">Process</a>
+      <a href="assets.html">Free assets</a>
+      <a href="studies.html">Studies</a>
+      <a href="about.html">About</a>
     </nav>
   </header>
 
@@ -65,122 +66,76 @@
         <h1 id="hero-title">Nature, built from<br>nothing but geometry.</h1>
         <p class="hero-copy">Photoreal forests, terrain and free production-ready assets. Every mesh, shader and texture is authored procedurally — no downloaded models, image textures or HDRIs.</p>
         <div class="actions">
-          <a class="button primary" href="https://ridgelinestudio.itch.io/procedural-nature-kit">Download the free asset kit</a>
-          <a class="button secondary" href="#work">View featured work</a>
+          <a class="button primary" href="assets.html">Explore the free kit</a>
+          <a class="button secondary" href="work.html">See the featured work</a>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section" aria-labelledby="work-title">
+    <section class="section" aria-labelledby="explore-title">
       <div class="section-head">
-        <p class="eyebrow">Featured work</p>
-        <h2 id="work-title">Ancient Forest</h2>
+        <p class="eyebrow">Start here</p>
+        <h2 id="explore-title">Explore the studio</h2>
+        <p>Short pages, each focused on one part of the work.</p>
       </div>
+      <div class="cards">
+        <a class="card" href="work.html">
+          <span class="card-kicker">01 / Featured</span>
+          <strong>Ancient Forest</strong>
+          <span>The final render, specs and release links.</span>
+        </a>
+        <a class="card" href="process.html">
+          <span class="card-kicker">02 / Method</span>
+          <strong>How it's made</strong>
+          <span>Geometry, materials and light — all from code.</span>
+        </a>
+        <a class="card" href="assets.html">
+          <span class="card-kicker">03 / Free download</span>
+          <strong>Nature Kit v1.0</strong>
+          <span>Eight reusable assets under CC BY 4.0.</span>
+        </a>
+        <a class="card" href="studies.html">
+          <span class="card-kicker">04 / Progression</span>
+          <strong>Early studies</strong>
+          <span>Smaller experiments from before the final.</span>
+        </a>
+        <a class="card" href="about.html">
+          <span class="card-kicker">05 / Studio</span>
+          <strong>About &amp; links</strong>
+          <span>The principle behind the work and where to find it.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section tinted" aria-labelledby="featured-title">
       <div class="feature">
         <figure>
           <img src="forest.png" alt="Ancient forest render with a shallow stream, grasses, roots and dense foliage" loading="lazy" decoding="async">
-          <figcaption>Final render — 1600 × 1000, Cycles, fully procedural scene.</figcaption>
+          <figcaption>Ancient Forest — final render, 1600 × 1000.</figcaption>
         </figure>
         <div class="feature-text">
-          <p>A first serious study in atmosphere and scale: buttress-rooted trees, layered foliage, a shallow stream and uneven forest floor, all generated from Blender geometry and noise-driven shaders.</p>
-          <ul class="specs">
-            <li><span>Engine</span> Cycles / CPU</li>
-            <li><span>Scene</span> ~5.25 million vertices</li>
-            <li><span>Assets</span> Built in-house, reusable</li>
-            <li><span>Source</span> No external art or HDRIs</li>
-          </ul>
+          <p class="eyebrow">Latest final</p>
+          <h2 id="featured-title">A forest grown from generators.</h2>
+          <p>Buttress-rooted trees, layered foliage, a shallow stream and uneven ground cover, built from reusable Python generators and lit in Cycles.</p>
           <div class="actions small">
-            <a class="button ghost" href="https://www.deviantart.com/ridgelinestudio/art/1412686502">DeviantArt</a>
-            <a class="button ghost" href="https://www.pixiv.net/en/artworks/152338282">Pixiv</a>
+            <a class="button primary" href="work.html">View the work</a>
+            <a class="button secondary" href="process.html">Read the process</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="process" class="section tinted" aria-labelledby="process-title">
-      <div class="section-head">
-        <p class="eyebrow">Method</p>
-        <h2 id="process-title">How a scene is made</h2>
-        <p>The work is generated from reusable Python builders rather than assembled from downloaded parts.</p>
-      </div>
-      <ol class="process-list">
-        <li>
-          <span class="step" aria-hidden="true">01</span>
-          <div><h3>Geometry</h3><p>Trees, roots, terrain, rocks and ground cover are emitted as meshes from deterministic generators, with real-world metre scale and clean topology.</p></div>
-        </li>
-        <li>
-          <span class="step" aria-hidden="true">02</span>
-          <div><h3>Materials</h3><p>Bark grain follows the tube axis through dedicated UVs. Leaf cards, moss and soil use procedural noise and colour ramps — no image textures.</p></div>
-        </li>
-        <li>
-          <span class="step" aria-hidden="true">03</span>
-          <div><h3>Light &amp; render</h3><p>Cycles handles global illumination and atmosphere. The result keeps a deliberate faceted edge so the constructed geometry stays readable.</p></div>
-        </li>
-      </ol>
-      <details class="technical">
-        <summary>Technical notes</summary>
-        <p>Blender 4.3.2 · Cycles CPU · 12 threads · no third-party models, image textures or HDRIs. Assets are based at z = 0, metrically scaled and exported as Y-up OBJ/MTL with UVs.</p>
-      </details>
-    </section>
-
-    <section id="assets" class="section" aria-labelledby="assets-title">
-      <div class="section-head">
-        <p class="eyebrow">Free download · CC BY 4.0</p>
-        <h2 id="assets-title">Procedural Nature Kit v1.0</h2>
-        <p>A compact collection of eight reusable forest assets for environment artists. Clean Blender project, individual OBJ/MTL files, a README and reference renders.</p>
-      </div>
+    <section class="section" aria-labelledby="kit-title">
       <div class="kit">
         <img src="kit.png" alt="Contact sheet showing the eight assets in the Procedural Nature Kit" loading="lazy" decoding="async">
         <div class="kit-body">
-          <div class="asset-grid">
-            <span>Ancient Tree</span><span>Fern Clump</span><span>Grass Clump</span><span>Rock Cluster</span>
-            <span>Fallen Log</span><span>Fungi Cluster</span><span>Stream Tile</span><span>Forest Floor Patch</span>
-          </div>
-          <p class="licence">Licensed under <strong>Creative Commons Attribution 4.0</strong>. Free for personal and commercial use with attribution to Ridgeline Studio.</p>
+          <p class="eyebrow">Free · CC BY 4.0</p>
+          <h2 id="kit-title">Procedural Nature Kit v1.0</h2>
+          <p>Eight clean, metrically scaled forest assets for Blender and other DCC tools. No image textures, no third-party meshes.</p>
           <div class="actions small">
-            <a class="button primary" href="https://ridgelinestudio.itch.io/procedural-nature-kit">Get it on itch.io</a>
-            <a class="button secondary" href="https://www.deviantart.com/ridgelinestudio/art/Procedural-Nature-Kit-%E2%80%94-8-Forest-Assets-%28Blender-OBJ%29-1412714314">Get it on DeviantArt</a>
+            <a class="button primary" href="assets.html">See what's inside</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="studies" class="section tinted" aria-labelledby="studies-title">
-      <div class="section-head">
-        <p class="eyebrow">Progression</p>
-        <h2 id="studies-title">Early studies</h2>
-        <p>Smaller experiments from before the Ancient Forest final. Shown for context — they are not the current quality benchmark.</p>
-      </div>
-      <div class="study-grid">
-        <figure><img src="study-alpine.png" alt="Early alpine ridge render under a pale sky" loading="lazy" decoding="async"><figcaption>Alpine ridge</figcaption></figure>
-        <figure><img src="study-autumn.png" alt="Early autumn woodland render with warm foliage" loading="lazy" decoding="async"><figcaption>Autumn woodland</figcaption></figure>
-        <figure><img src="study-night.png" alt="Early night-time forest render with cool light" loading="lazy" decoding="async"><figcaption>Night forest</figcaption></figure>
-        <figure><img src="study-forest.png" alt="Early forest floor study with simplified trees" loading="lazy" decoding="async"><figcaption>Forest study</figcaption></figure>
-      </div>
-    </section>
-
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="section-head">
-        <p class="eyebrow">Studio note</p>
-        <h2 id="about-title">Built, not downloaded.</h2>
-      </div>
-      <div class="about-grid">
-        <article><h3>Fully procedural</h3><p>Geometry, bark grain, leaf cards and ground cover are generated from code. No third-party models, image textures or HDRIs enter the work.</p></article>
-        <article><h3>Detail first</h3><p>The look is photoreal with a deliberate faceted edge — real light and atmosphere, but with readable constructed forms rather than plastic smoothness.</p></article>
-        <article><h3>Reusable by design</h3><p>Assets are metrically scaled, based at z = 0, organised into named collections and exported with clean UVs for straightforward placement.</p></article>
-      </div>
-    </section>
-
-    <section id="links" class="section tinted" aria-labelledby="links-title">
-      <div class="section-head">
-        <p class="eyebrow">Find the work</p>
-        <h2 id="links-title">Elsewhere</h2>
-      </div>
-      <div class="link-grid">
-        <a href="https://ridgelinestudio.itch.io"><strong>itch.io</strong><span>Free downloads &amp; project page</span></a>
-        <a href="https://www.deviantart.com/ridgelinestudio"><strong>DeviantArt</strong><span>Finished renders &amp; releases</span></a>
-        <a href="https://www.pixiv.net/en/users/131241114"><strong>Pixiv</strong><span>Illustration-style portfolio</span></a>
-        <a href="https://github.com/ridgeline-studio/ridgeline-studio.github.io"><strong>GitHub</strong><span>This site's source</span></a>
       </div>
     </section>
   </main>
